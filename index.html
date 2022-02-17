@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Pokemon</title>
 	<link rel="stylesheet" href="bootstrap.css">
 </head>
 
 <body>
-<div class="container">
-	<h1>Pokemon</h1>
-	<!-- button  -->
-	<button class="btn btn-primary btn-lg px-4" id="get-pokemon">Get Pokemon</button>
-	<ul id="poke-list">
-		
-	</ul>
-	<!-- custom elememnt with attributes -->
-	<person name="praveen" height="1.5"> Praveen</person>
-</div>
-<script src="jquery-3.6.0.js"></script>
-<script src="app.js"></script>
+	<div class="container">
+		<h1>Pokemon</h1>
+		<!-- button  -->
+		<button class="btn btn-primary btn-lg px-4" id="get-pokemon">Get Pokemon</button>
+
+		<!-- unordered list to display pokemon name and url -->
+		<ul id="poke-list"></ul>
+
+		<!-- table to display pokemon name url and abilities -->
+		<table id="pokeTable" class="table table-bordered">
+			<thead >
+				<tr class="table-primary">
+					<th>Name</th>
+					<th>Url</th>
+					<th>Abilities</th>
+				</tr>
+			</thead>
+			<tbody id="row_data">
+				<!-- jQuery code to enter data -->
+			</tbody>
+		</table>
+
+
+		<!-- custom elememnt with attributes -->
+		<person name="praveen" height="1.5"> Praveen</person>
+
+	</div>
+	<script src="jquery-3.6.0.js"></script>
+	<script src="tabledata.js"></script>
 </body>
+
 </html>
